@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Island Runway Courier — a tiny flight game</title>
+<meta name="description" content="Island Runway Courier: take off from an island runway, thread three golden rings, and bring the mail plane home. Plays offline in a desktop browser.">
+<style>
+  html, body { margin: 0; padding: 0; background: #0b1116; }
+  body { font-family: system-ui, sans-serif; color: #c7d3dc; }
+  main { max-width: 1280px; margin: 0 auto; padding: 12px; }
+  canvas { display: block; width: 100%; height: auto; background: #5fb2ef; border-radius: 8px; }
+  p.hint { text-align: center; font-size: 14px; margin: 10px 0 0; }
+  p.hint b { color: #ffd27a; }
+</style>
+</head>
+<body>
+<main>
+  <canvas id="courier-canvas" width="1280" height="800"></canvas>
+  <p class="hint"><b>W / S</b> throttle &nbsp;·&nbsp; <b>A / D</b> turn &nbsp;·&nbsp; <b>↑ / ↓</b> pitch &nbsp;·&nbsp; drag the mouse to look &nbsp;·&nbsp; <b>R</b> restart</p>
+</main>
+<script src="src/config.js"></script>
+<script src="src/world.js"></script>
+<script src="src/input.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/render.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
